@@ -13,13 +13,13 @@ overview:
 The following goes into more depth about each components' state, how the user can trigger state change,
  as well as what is passed down from component to component:
 
- - APP:
-     use: the app creates the overall structure of the page, and has state and methods that are passed down
-          to the next components
-     state: cart
-     methods: addToCart(), removeFromCart(), which update the Cart state.
-     Child components:
-           - BROWSING-SECTION:
+     - APP:
+         use: the app creates the overall structure of the page, and has state and methods that are passed down
+              to the next components
+         state: cart
+         methods: addToCart(), removeFromCart(), which update the Cart state.
+         Child components:
+               - BROWSING-SECTION:
                   inherits: addToCart(), and list of clothing passed from App
                   use: the BrowsingSection handles the sorting logic, and has components to display the list.
                   state: current user selected filters and sorting style.
