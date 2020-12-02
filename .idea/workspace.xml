@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f04c65e4-fe00-4c51-9938-42cf2215f33f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BrowsingSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BrowsingSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClothingItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClothingItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FilteredSortedClothing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FilteredSortedClothing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/README" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +47,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606880156531</updated>
-      <workItem from="1606880158984" duration="1870000" />
+      <workItem from="1606880158984" duration="2164000" />
+      <workItem from="1606924037981" duration="2987000" />
     </task>
     <servers />
   </component>
@@ -58,5 +65,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

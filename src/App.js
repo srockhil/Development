@@ -2,8 +2,8 @@ import React from 'react';
 import BrowsingSection from './BrowsingSection';
 import Cart from './Cart'
 
-//List Of all Activites to do in quarantine, this list will be what is filtered, sorted, and aggregated
-const activity_list =  [
+//this is the list of all clothing items to be shown on the app.
+const clothing_list =  [
     {name:"Milla Croc Knee High Boot", style:'Shoes', color:'Black', price: 115, image:"mila-crock-knee-high-boot.webp"},
     {name:"Maliha Mini Dress", style:'Dresses', color:'Blue', price: 45, image:"maliha-mini.webp"},
     {name:"Kendall Crop Top", style:'Tops', color:'White', price: 32, image:"kendal-crop.webp"},
@@ -17,7 +17,12 @@ const activity_list =  [
     {name:"Clair De Lune Heels", style: 'Shoes', color: 'Blue', price: 55, image:"clair-heels.webp"},
     {name:"Arabella Sweatpants", style: 'Pants', color: 'White', price: 59, image: "arabella-pants.webp"}]
 
-
+/**
+ *  The app class holds the main structure of the app, as well as the cart state, which all of the subcomponents
+ * modify. The app class has the add to cart and remove from cart logic. It passes the cart and addToCart functions
+ * to the BrowsingSection component, and it passes the cart, addToCart and removeFromCart functions to the cart
+ * componenet.
+ */
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -26,6 +31,8 @@ class App extends React.Component {
         };
     }
 
+
+    // handles add to cart logic
     addToCart(item) {
         let cart = this.state.cart
         let items = Object.keys(cart)
@@ -40,6 +47,8 @@ class App extends React.Component {
 
     }
 
+
+     // handles remove from cart logic
     removeFromCart(item) {
         let cart = this.state.cart
         cart[item.name].quantity --;
@@ -63,13 +72,15 @@ class App extends React.Component {
                 </div>
                 <div className="row p-5">
                     <div className="col-9">
+                        {/*browsing section handles display of clothing items and filtering/sorting logic */}
                         <BrowsingSection
-                            list={activity_list}
-                            cart = {this.state.cart}
+                            list={clothing_list}
                             addToCart ={this.addToCart.bind(this)} />
                     </div>
 
                     <div className="col-3">
+                        {/*cart section handles display of items in cart, as well as adding and removing
+                         items from the cart */}
                         <Cart
                             cart = {this.state.cart}
                             addToCart ={this.addToCart.bind(this)}
