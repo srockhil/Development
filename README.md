@@ -53,5 +53,5 @@ To reiterate:
      or sort option.
       - the add to cart methods and remove from cart methods, as well as the cart state itself, is passed down from
         the app class.
-        Clothing item uses addToCart
+        Clothing item uses addToCart.
         Cart uses addToCart, removeFromCart, and the cart .
