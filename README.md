@@ -3,12 +3,12 @@
 
 Structure:
 
-overview:
-    App
-       BrowsingSection
-           FilteredSortedClothing
-                ClothingItem (x filtered list size)
-       Cart
+        overview:
+                -  App
+                   -  BrowsingSection
+                       -  FilteredSortedClothing
+                             - ClothingItem (x filtered list size)
+                    - Cart
 
 The following goes into more depth about each components' state, how the user can trigger state change,
  as well as what is passed down from component to component:
